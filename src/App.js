@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { render } from "sass";
+import React, { useEffect } from "react";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    e.preventDefault();
+    let listenEr = e.target;
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Broklyn Tattoo and Piercings</p>
+      <input
+        type="text"
+        name="input"
+        id=""
+        placeholder=""
+        onChange={this.listenEr}
+      />
     </div>
   );
 }
