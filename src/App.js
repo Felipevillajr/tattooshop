@@ -1,12 +1,21 @@
-import { render } from "sass";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const [word, setWord] = useState();
+
   useEffect(() => {
-    e.preventDefault();
-    let listenEr = e.target;
+    console.log(word);
   });
+
+  const hChange = (e) => {
+    setWord({ ...word, [e.target.name]: e.target.value });
+  };
+  x;
+
+  const reset = (e) => {
+    setWord("");
+  };
 
   return (
     <div>
@@ -14,10 +23,13 @@ function App() {
       <input
         type="text"
         name="input"
-        id=""
+        id="name"
+        name="name"
         placeholder=""
-        onChange={this.listenEr}
+        onChange={hChange}
+        onSubmit={reset}
       />
+      <button id="name" onClick={() => reset}></button>
     </div>
   );
 }
