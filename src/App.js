@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
   const [word, setWord] = useState();
 
-  something something darkside
   useEffect(() => {
     console.log(word);
   });
