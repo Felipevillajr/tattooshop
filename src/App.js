@@ -19,7 +19,9 @@ function App() {
 
   return (
     <div>
-      <p>Broklyn Tattoo and Piercings</p>
+      <div>
+        <p>Broklyn Tattoo and Piercings</p>
+      </div>
       <input
         type="text"
         name="input"
